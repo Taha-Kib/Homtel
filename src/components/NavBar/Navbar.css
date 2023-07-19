@@ -1,0 +1,118 @@
+.header {
+  position: fixed;
+  height: 10%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  transition: 0.3s ease-in;
+  overflow: hidden;
+  background: rgba(255, 255, 255);
+  /* background: rgba(0, 0, 0, 0.5); */
+  /* background-image: linear-gradient(to right, #c9f8f5 0%, #fcb215 30%, #03859d 70%,  #028889 90%, #c9f8f5 100%); */
+}
+
+.header .navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+  gap: 50px;
+  height: 100%;
+  padding: 0 1rem;
+  margin-right: 15%;
+}
+
+.header .navbar img {
+  margin-top: 5px;
+  width: 100%;
+  height: 90px;
+  margin-left: 30px;
+}
+
+@media screen and (max-height: 800px) {
+  .header .navbar img {
+    width: 95%;
+    height: 70px;
+  }
+}
+
+.header .nav-menu {
+  display: flex;
+}
+
+.header .nav-item {
+  padding: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  margin-left: 10px;
+  margin-right: 10px;
+  font-weight: 700;
+  font-size: 25px;
+  color: #028889;
+  text-decoration: none;
+}
+
+.header .nav-item a:hover {
+  padding-bottom: 12px;
+  border-bottom: 3px solid var(--secondary-color);
+}
+
+.hamburger {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .header {
+    max-width: 100%;
+    height: 60px;
+  }
+
+  .header .navbar img {
+    width: 80%;
+    height: 50px;
+  }
+
+  .header .navbar {
+    justify-content: flex-start;
+    align-items: center;
+    /* margin: auto; */
+    width: 100%;
+    gap: 0px;
+    padding: 0;
+    /* margin-right: 15%; */
+  }
+
+  .header .nav-item {
+    padding: 5px;
+    cursor: pointer;
+    margin-left: 0px;
+    margin-right: 0px;
+    font-weight: 700;
+    font-size: 13px;
+    color: #028889;
+    text-decoration: none;
+    margin-right: 20px;
+  }
+
+  .nav-menu {
+    position: fixed;
+    left: -100%;
+    top: 90px;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.9);
+    width: 100%;
+    height: 90vh;
+    z-index: 999;
+    text-align: center;
+    transition: 0.3s;
+  }
+
+  .nav-menu.active {
+    left: 0;
+  }
+
+  .nav-item {
+    margin: 1.5rem 0;
+  }
+}

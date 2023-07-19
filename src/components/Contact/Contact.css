@@ -1,0 +1,111 @@
+.contact_container {
+  margin-top: 100px;
+  /* background: url('../images/homtel-logo.png') no-repeat center center/cover; */
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center bottom 20px; /* Adjust the margin value as needed */
+}
+
+.contact_container::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('../images/homtel-logo.png') no-repeat center bottom 20px/contain;
+  background-repeat: no-repeat;
+  background-position: center bottom 20px; /* Adjust the margin value as needed */
+  opacity: 0.1; /* Adjust the opacity value between 0 and 1 */
+  z-index: -1;
+}
+
+
+@media screen and (max-width: 600px) {
+  .contact_container::before {
+    background-position: center bottom 300px; /* Adjust the margin value as needed */
+  }
+}
+
+.section_title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 50px;
+  margin-top: 100px;
+}
+
+.section_subtitle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contactus-items {
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+
+
+@media screen and (max-width: 600px) {
+  .contactus-items {
+    gap: 30px;
+  }
+}
+
+.facebook-icon,
+.email-icon,
+.phone-icon,
+.instagram-icon,
+.whatsapp-icon {
+  cursor: pointer;
+  font-size: 50px;
+}
+
+.facebook-icon {
+  color: #3b5998;
+}
+
+.email-icon {
+  color: rgb(215, 151, 249);
+}
+
+.phone-icon {
+  font-size: 38px;
+  color: rgb(124, 115, 33);
+}
+
+.instagram-icon {
+    width: 60px;
+    height: 60px;
+}
+
+.whatsapp-icon{
+    color: #25D366;
+}
+
+.expand {
+  color: rgb(181, 0, 75);
+  width: 0;
+  overflow: visible;
+}
+
+.properties {
+  margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.booking-title{
+  font-size: 30px;
+}
+
+ul li{
+  font-weight: 500;
+  margin-top: 30px;
+  margin-right: 30px;
+}
