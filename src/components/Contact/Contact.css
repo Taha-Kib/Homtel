@@ -20,7 +20,7 @@
 }
 
 
-@media screen and (max-width: 600px) {
+@media screen and (min-width: 200px) and (max-width: 600px) {
   .contact_container::before {
     background-position: center bottom 300px; /* Adjust the margin value as needed */
   }
@@ -49,7 +49,7 @@
 }
 
 
-@media screen and (max-width: 600px) {
+@media screen and (min-width: 200px) and (max-width: 600px) {
   .contactus-items {
     gap: 30px;
   }
